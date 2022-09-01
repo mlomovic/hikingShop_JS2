@@ -34,7 +34,7 @@ const ispisProizvoda = () => {
 
 const goToSingle = (id) =>{
     localStorage.setItem("singleProduct", id); // snima u local storage key-value par singleProduct: id
-    window.location = "single.html"
+    window.location = "single.html";
     // console.log(id);
 }
 

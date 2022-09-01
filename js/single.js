@@ -83,3 +83,36 @@ forma.addEventListener('submit', (event) => {
     window.location="products.html";
 
 })
+
+
+
+//* Primer sa try-catch-finally
+
+// forma.addEventListener('submit', (event) => {
+//     event.preventDefault();
+
+//     console.log(event.target.kolicina.value);
+
+//     fetch(`http://localhost:3000/${currentId}`)
+//         .then(proizvodRaw => {
+//             return proizvodRaw.json();
+//         })
+//         .then(proizvodJson => {
+//             proizvodJson[0].qty = event.target.kolicina.value;
+
+//             if(!localStorage.getItem('korpa')){
+//                 localStorage.setItem('korpa', '[]');
+//             };
+
+//             korpa = JSON.parse(localStorage.getItem('korpa'));
+//             korpa.push(proizvodJson[0]);
+//             console.log(korpa);
+//             localStorage.setItem('korpa', JSON.stringify(korpa));
+
+//         })
+//         .catch(err => console.log(err))
+//         .finally(_ =>{
+//             window.location="products.html";
+//         })
+
+// })
